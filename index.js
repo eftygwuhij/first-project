@@ -1,13 +1,6 @@
-function jump(nums) {
-  let jumps = 0;
-  let currentEnd = 0;
-  let farthest = 0;
-  for (let i = 0; i < nums.length - 1; i++) {
-    farthest = Math.max(farthest, i + nums[i]);
-    if (i === currentEnd) {
-      jumps++;
-      currentEnd = farthest;
-    }
-  }
-  return jumps;
+const number = 10;
+if (number % 2 === 0) {
+  console.log("Even number");
+} else {
+  console.log("Odd number");
 }
